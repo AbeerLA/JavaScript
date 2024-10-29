@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Registration Form </title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit" method="POST">
+        <lable>First Nmae:</lable>
+        <input type="text" name="first first-name" required><br><br>
+
+        <lable>Last Name:</lable>
+        <input type="text" name="last-name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <lable>Gender:</lable>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <inpput type="radio" name="gender" value="female" required> Female<br><br>
+        
+        <lable>Interests</lable><br>
+        <input type="checkbox" name="interests" value="reading"> Reading<br>
+        <input type="checkbox" name="interests" value="traveling"> Traveling<br>
+        <input type="checkbox" name="interests" value="gaming"> Gaming<br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
