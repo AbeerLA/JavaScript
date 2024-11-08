@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        /* THE WHITE BACKGROUND*/
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* THE NAIB BLACK BOX */
+        .black-box {
+            background-color: black;
+            color: white;
+            width: 90%;
+            height: 80%;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px; 
+            text-align: center;
+        }
+
+        /* PROFILE CARD */
+        .profile-card {
+            background-color: #333;
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        /* PROFILE IMG  */
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px; 
+            display: block;
+        }
+
+        /*  USER NAME   */
+        .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* LOCATION  */
+        .profile-location {
+            color: #8bc34a;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* THE BIO  */
+        .profile-bio {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        /* LINKS */
+        .profile-link {
+            display: block;
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .profile-link:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="black-box">
+        <div class="profile-card">
+            <!-- PROFILE PIC  -->
+            <img src="pic for profile.jpg" alt="Profile Image" class="profile-image">
+            
+            <!-- USER NAME  -->
+            <div class="profile-name">Jessica Randall</div>
+            
+            <!-- LOCATION -->
+            <div class="profile-location">London, United Kingdom</div>
+            
+            <!--  BIO -->
+            <div class="profile-bio">"Front-end developer and avid reader."</div>
+            
+            <!-- LINKS  -->
+            <a href="#" class="profile-link">GitHub</a>
+            <a href="#" class="profile-link">Frontend Mentor</a>
+            <a href="#" class="profile-link">LinkedIn</a>
+            <a href="#" class="profile-link">Twitter</a>
+            <a href="#" class="profile-link">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
