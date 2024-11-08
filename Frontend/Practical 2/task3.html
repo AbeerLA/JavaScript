@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale= 1.0">
+        <title>CSS Grid Layout Example</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f4f4f4;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                width: 80%;
+                padding: 10px;
+                border: 2px solid#333;
+            }
+            .grid-item{
+                padding: 20px;
+                border: 2px solid #333;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 1.2em;
+                color: white;
+            }
+
+            .grid-item:nth-child(1){background-color: #7fffd4;}
+            .grid-item:nth-child(2){background-color: #6495ed;}
+            .grid-item:nth-child(3){background-color: #ff1493;}
+            .grid-item:nth-child(4){background-color: #ffd700;}
+            .grid-item:nth-child(5){background-color: #800080;}
+            .grid-item:nth-child(6){background-color: #4caf50;}
+
+            .grid-item:hover{
+                background-color: #555;
+                transform: sccale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item" >Item 1 </div>
+            <div class="grid-item" >Item 2 </div>
+            <div class="grid-item" >Item 3 </div>
+            <div class="grid-item" >Item 4 </div>
+            <div class="grid-item" >Item 5 </div>
+            <div class="grid-item" >Item 6 </div>
+        </div>
+    </body>
+</html>
