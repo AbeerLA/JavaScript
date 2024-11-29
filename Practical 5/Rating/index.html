@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main container for the rating component -->
+    <div class="rating">
+        <!-- Header section containing the title and description -->
+        <header class="rating__header">
+            <h1 class="rating__title">How did we do?</h1>
+            <p class="rating__description">
+                Please let us know how we did with your support request.
+            </p>
+        </header>
+
+        <!-- Buttons section for selecting a rating -->
+        <div class="rating__buttons">
+            <!-- Each button represents a rating value -->
+            <button class="rating__button" data-value="1">1</button>
+            <button class="rating__button" data-value="2">2</button>
+            <button class="rating__button" data-value="3">3</button>
+            <button class="rating__button" data-value="4">4</button>
+            <button class="rating__button" data-value="5">5</button>
+        </div>
+
+        <!-- Submit button for submitting the selected rating -->
+        <button class="rating__submit">Submit</button>
+    </div>
+        <!-- Star image in the corner -->
+    <div class="rating__star"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
