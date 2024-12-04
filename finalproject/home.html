@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="kanban">
+        <aside class="kanban__sidebar">
+            <h1 class="kanban__logo"><img src="./assets/logo-light.svg" alt="lightlogo"></h1>
+            <ul class="kanban__menu">
+                <li class="kanban__menu-item kanban__menu-item--active">
+                    <img src="./assets/icon-board.svg" alt="Board Icon"
+                        class="icon-board" >Platform Launch</li>
+            </ul>
+            <div class="kanban__footer">
+                <div class="dark-light">
+                    <img src="./assets/icon-light-theme.svg" height="22.5px">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="button"></label>
+                    <img src="./assets/icon-dark-theme.svg" height="22.5px">
+                  </div>
+                <span class="kanban__footer-text"><img src="./assets/icon-hide-sidebar.svg" alt="hide"> Hide
+                    Sidebar</span>
+            </div>
+        </aside>
+
+        <main class="kanban__main">
+            <header class="kanban__header">
+                <h2 class="kanban__title">Platform Launch</h2>
+                <div class="right">
+                    <button class="kanban__add-task" id="add__task"><img src="./assets/icon-add-task-mobile.svg">Add New Task</button>
+                    <button class="kanban__points">⋮</button>
+                </div>
+            </header>
+
+            <section class="kanban__board">
+                <div class="kanban__column">
+                    <h3 class="kanban__column-title"><span>🔵</span>TODO (<span id="num__count"></span>)</h3>
+                    <div class="kanban__tasks">
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Build UI for onboarding flow</h4>
+                            <p class="kanban__task-details">0 of 3 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Build UI for search</h4>
+                            <p class="kanban__task-details">0 of 1 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Build settings UI</h4>
+                            <p class="kanban__task-details">0 of 2 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">QA and test all major user<br>
+                                journeys</h4>
+                            <p class="kanban__task-details">0 of 2 subtasks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban__column">
+                    <h3 class="kanban__column-title"><span>🟣</span>DOING (<span id="num__count"></span>)</h3>
+                    <div class="kanban__tasks">
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Design settings and search pages</h4>
+                            <p class="kanban__task-details">1 of 3 subtasks</p>
+                        </div>
+                        <div class="kanban__task" id="add__account">
+                            <h4 class="kanban__task-title">Add account management endpoints</h4>
+                            <p class="kanban__task-details">2 of 3 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Design onboarding flow</h4>
+                            <p class="kanban__task-details">1 of 3 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Add search endpoints</h4>
+                            <p class="kanban__task-details">1 of 2 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Add authentication endpoints</h4>
+                            <p class="kanban__task-details">1 of 2 subtasks</p>
+                        </div>
+                        <div class="kanban__task" id="research">
+                            <h4 class="kanban__task-title">Research pricing points of various<br>
+                                competitors and trial different<br>
+                                business models</h4>
+                            <p class="kanban__task-details">1 of 3 subtasks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban__column">
+                    <h3 class="kanban__column-title"><span>🟢</span>DONE (<span id="num__count"></span>)</h3>
+                    <div class="kanban__tasks">
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Conduct 5 wireframe tests</h4>
+                            <p class="kanban__task-details">1 of 1 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Create wireframe prototype</h4>
+                            <p class="kanban__task-details">1 of 1 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Review results of usability tests <br>
+                                and iterate</h4>
+                            <p class="kanban__task-details">3 of 3 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Create paper prototypes and <br>
+                                conduct 10 usability tests with<br>
+                                potential customers</h4>
+                            <p class="kanban__task-details">2 of 2 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Market discovery</h4>
+                            <p class="kanban__task-details">1 of 1 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Competitor analysis</h4>
+                            <p class="kanban__task-details">2 of 2 subtasks</p>
+                        </div>
+                        <div class="kanban__task">
+                            <h4 class="kanban__task-title">Research the market<br>
+                                and iterate</h4>
+                            <p class="kanban__task-details">2 of 2 subtasks</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
